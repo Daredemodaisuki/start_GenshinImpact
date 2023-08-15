@@ -37,8 +37,7 @@ def check_genshinimpect() -> bool:
     for pid in pl:
         if psutil.Process(pid).name() == "YuanShen.exe":
             print("原神，已启动！ -> pid =", pid)
-            # 绘制白屏+开始检查窗口是否创建
-            white_win.draw_window()
+            white_win.draw_window()  # 绘制白屏+开始检查窗口是否创建
             return True
     return False
 

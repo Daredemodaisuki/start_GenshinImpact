@@ -45,7 +45,7 @@ def timer():
 
 def draw_window():
     win.title("Wait for Genshin...")
-    win.geometry("1920x1080")
+    win.geometry("1920x1080")  # 改？
     win.overrideredirect(True)
     win.configure(background='white')
     label["text"] = "请稍候\n原神，正在启动!\n0.0"
